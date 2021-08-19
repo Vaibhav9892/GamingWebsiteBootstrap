@@ -1,0 +1,122 @@
+body {
+    display: flex;
+}
+
+.container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    
+}
+
+.sky {
+    background-image: url("Stock/background-day.png");
+    width: 500px;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+
+    
+}
+.obstracle{
+    background-image: url("Stock/pipe-green.png");
+    width: 70px;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size:cover;
+}
+
+.topObstracle
+{
+    background-image: url("Stock/pipe-green.png");
+    width: 70px;
+    height: 300px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    position: absolute;
+    background-size:cover;
+
+}
+
+.ground {
+    background-image: url("Stock/base.png");
+    width: 500px;
+    height: 150px;
+    top: 580px;
+    position: absolute;
+    background-repeat:repeat-x;
+    background-size:100% 100%;
+    z-index: +1;    
+}
+
+.bird {
+    background-image: url("Stock/bird.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    position: absolute;
+ 
+}
+.border-left {
+    width: 20px;
+    height: 790px;
+    position:  absolute;
+    background-color: white;
+    z-index: +2;
+    left:-10px;
+}
+
+.border-right {
+    width: 90px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 500px;
+}
+.border-top{
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top:0px;
+    left:-10px;
+
+}
+
+@font-face {
+    font-family: scoreFont;
+    src: url("score.TTF");
+  }
+
+.score{
+    font-family: scoreFont;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: black;
+  z-index: +4;
+}

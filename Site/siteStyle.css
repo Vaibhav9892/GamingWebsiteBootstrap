@@ -1,0 +1,45 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.navbar{
+    background-color: transparent;
+    position: relative;
+    z-index: 4;
+}
+
+.nav-link{
+    font-size: 28px;
+}
+.nav-brand{
+    font-size: 28px;
+}
+
+main{
+    position: absolute;
+    top: 0%;
+    z-index: 0%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+
+    width:8%;
+}
+
+.site-wrapper{
+    height: 1140px;
+}
+
+.card{
+    background-color: rgba(0,0,0,0.871);
+}
+
+.parallax{
+    background-image: url("Stock/1320758.jpg");
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 500px;
+}
